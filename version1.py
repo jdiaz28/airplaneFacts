@@ -174,7 +174,10 @@ def calcDistance(y1,x1,y2,x2):
     return c * r
 
 def findLocation():
-    ipInformation = 'http://api.ipstack.com/check?access_key=5bcf499c57462858a9bea4eb407267d6&format=1'
+    #using api.ipstak.com to find location data from the users IP address
+    #place your personal api key here
+    apiKey = '5bcf499c57462858a9bea4eb407267d6'
+    ipInformation = 'http://api.ipstack.com/check?access_key=' + apiKey + '&format=1'
     r = requests.get(ipInformation)
     j = json.loads(r.text)
     lat = j['latitude']
@@ -328,4 +331,3 @@ elif (choice == 6):
                                                                                                "arrive!")
 else:
     print('Mhmm, please try again mister "I didn\'t read the instructions"')
-

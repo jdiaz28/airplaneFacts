@@ -3,6 +3,11 @@ Python program that pulls flight data and gives interesting facts from that data
 
 Using the flightradar24 library I was able to pull the flight data and build off of that.
 
+## How to use:
+1. Install the required packages
+2. Go to https://ipstack.com and make an account to get your api key
+3. Copy and paste your API key to the findLocation function
+4. Run it
 ## Issues
 1. I think I improperly used flightradar24. Still learning... oops.
 2. version2 coming soon
